@@ -17,3 +17,23 @@ exports.addUser = (req, res) => {
     });
   }
 };
+
+exports.list = (req, res) => {
+  User.find({}, (err, users) => {
+    if (!users) {
+      res.status(400).json({ error: 'There is an error' });
+    } else {
+      res.status(200).json(users);
+    }
+  });
+};
+
+exports.find = (req, res) => {
+  User.findById(req.params.userId, (err, user) => {
+    if (!user) {
+      res.status(400).json({ error: 'The user could not be found.' });
+    } else {
+      res.status(200).json(user);
+    }
+  });
+};
