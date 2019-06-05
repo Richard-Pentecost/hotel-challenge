@@ -63,4 +63,5 @@ Project Setup
   2.  Copy accross .mocha.opts and mocha.config.js files from music api project
   3.  Create a .env.test file with a DATABASE_CONN value that is different to the other .env file
   4.  Add the .env.test file to .gitignore
-  5.  In the package.json add 'mocha test/**/*.test.js --opts .mocha.opts' to the test script
+  5.  In the package.json add 'mocha tests/**/*.test.js --opts .mocha.opts' to the test script
+  6.  Need to update eslintrc with a load of overrides (look at the eslintrc file)
