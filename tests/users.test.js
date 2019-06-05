@@ -23,6 +23,7 @@ describe('/users', () => {
             expect(err).to.equal(null);
             expect(user.name).to.equal('Richard');
             expect(user.email).to.equal('richard@hotmail.com');
+            expect(user.bookings).to.have.length(0);
             done();
           });
         });
@@ -90,7 +91,7 @@ describe('/users', () => {
           });
       });
     });
-    
+
     describe('GET /users/userId', () => {
       it('get a users info from id', (done) => {
         const user = users[0];
