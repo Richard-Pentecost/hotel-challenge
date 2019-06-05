@@ -9,6 +9,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  bookings: [],
 });
 
 const User = mongoose.model('User', userSchema);
