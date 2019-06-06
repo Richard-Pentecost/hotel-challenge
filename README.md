@@ -3,7 +3,7 @@ Hotel Challenge
 Your challenge is to create a database and web API for a hotel booking system, which implements the following requirements
 
 Requirements:
-  1.  Users should be able to sign up to the systme with a name and email address
+  1.  Users should be able to sign up to the system with a name and email address
   2.  Hotels should be able to register with a name, address and email address
   3.  Users should be able to make bookings at hotels
   4.  Bookings have a start date and an end date
